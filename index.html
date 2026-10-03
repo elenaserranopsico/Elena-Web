@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Elena Serrano Aguirrezábal · Psicóloga online especializada en adolescencia y familias</title>
+  <meta name="description" content="Psicóloga online especializada en adolescencia y familias. Terapia online para adolescentes, jóvenes, madres, padres y familias en toda España, con un enfoque práctico, cercano y adaptado a cada situación." />
+  <meta name="theme-color" content="#1f3a5f" />
+  <meta property="og:title" content="Elena Serrano Aguirrezábal · Psicóloga online especializada en adolescencia y familias" />
+  <meta property="og:description" content="Terapia online para adolescentes, jóvenes y familias. Un enfoque práctico, cercano y adaptado a cada situación." />
+  <meta property="og:type" content="website" />
+  <style>
+    :root{
+      --ink:#243140;
+      --muted:#667078;
+      --blue:#1d4f91;
+      --blue-2:#5f8fc5;
+      --cream:#f7f9fc;
+      --sand:#dce8f5;
+      --white:#fff;
+      --sage:#7b8670;
+      --line:#dce5ef;
+      --shadow:0 18px 50px rgba(31,58,95,.12);
+      --radius:22px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+    img{max-width:100%;display:block}
+    a{text-decoration:none;color:inherit}
+    .wrap{width:min(1160px, calc(100% - 40px));margin:auto}
+    .topbar{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(231,225,217,.8)}
+    .nav{height:92px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center}
+    .brand-logo{display:block;height:78px;width:auto;max-width:380px;object-fit:contain}
+    .nav-links{display:flex;gap:10px;align-items:center;font-size:15px}
+    .nav-links a{display:inline-flex;align-items:center;justify-content:center;padding:10px 16px;border-radius:999px;background:#dce8f5;color:var(--blue);font-weight:700;border:1px solid #bdd3ea;transition:.2s ease}
+    .nav-links a:hover{background:#cbdff3;transform:translateY(-1px)}
+    .nav-cta{padding:11px 18px;border-radius:999px;background:var(--blue);color:#fff;font-weight:650;transition:.2s ease;box-shadow:0 8px 20px rgba(29,79,145,.14)}
+    .nav-cta:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(29,79,145,.20);background:#183f75}
+    .hero{padding:72px 0 56px;background:linear-gradient(135deg,#fff 0%,#f7faff 58%,#eaf2fb 100%)}
+    .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:center}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:700;color:var(--blue);letter-spacing:.02em;text-transform:uppercase}
+    .eyebrow:before{content:"";width:28px;height:2px;background:var(--blue)}
+    h1{font-size:clamp(42px,6vw,72px);line-height:1.02;letter-spacing:-.045em;margin:18px 0 22px;font-weight:760;color:var(--blue)}
+    .hero p{font-size:20px;color:#505a63;max-width:700px}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 22px;border-radius:999px;font-weight:700;border:1px solid transparent;transition:.2s ease}
+    .btn-primary,.btn-whatsapp{background:#173f70;color:#fff;box-shadow:0 8px 24px rgba(31,58,95,.18)}
+    .btn-primary:hover,.btn-whatsapp:hover{transform:translateY(-1px);background:#102f55}
+    .btn-nav{background:#dcecff;color:#173f70;border-color:#b8d3ef}
+    .btn-nav:hover{transform:translateY(-1px);background:#c9e0f8}
+    .btn-secondary{border-color:#bfc7ce;color:var(--blue);background:#fff}
+    .btn-instagram{background:#eaf4ff;color:#173f70;border-color:#b8d3ef}
+    .btn-instagram:hover{transform:translateY(-1px);background:#d9ebff}
+    .btn-light{background:#f4f8fc;color:#173f70;border-color:#d8e4f0;box-shadow:0 8px 24px rgba(8,29,56,.14)}
+    .btn-light:hover{transform:translateY(-1px);background:#ffffff}
+    .hero-note{margin-top:22px;font-size:14px;color:#667078}
+    .portrait-card{position:relative}
+    .portrait-card img{width:100%;height:620px;object-fit:cover;object-position:center 18%;border-radius:32px;box-shadow:var(--shadow)}
+    .portrait-tag{position:absolute;left:-22px;bottom:28px;background:#fff;padding:17px 20px;border-radius:18px;box-shadow:var(--shadow);max-width:250px;border-left:4px solid var(--blue)}
+    .portrait-tag strong{display:block;color:var(--blue);font-size:17px}
+    section{padding:88px 0}
+    .section-head{max-width:760px;margin-bottom:46px}
+    .section-head h2{font-size:clamp(36px,4vw,50px);line-height:1.08;letter-spacing:-.035em;margin:10px 0 14px;color:var(--blue)}
+    .section-head p{font-size:18px;color:var(--muted)}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{padding:28px;border:1px solid var(--line);border-top:4px solid #8eb5dd;border-radius:var(--radius);background:#fff;min-height:220px;box-shadow:0 10px 30px rgba(29,79,145,.05)}
+    .card .num{font-size:13px;font-weight:800;color:var(--blue);letter-spacing:.08em}
+    .card h3{font-size:23px;margin:18px 0 10px;line-height:1.2;color:var(--blue)}
+    .card p{color:var(--muted);margin:0}
+    .soft{background:linear-gradient(180deg,#f8fbff 0%,#eef4fb 100%)}
+    .about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:center}
+    .about-grid img{border-radius:30px;height:640px;width:100%;object-fit:cover;object-position:center 14%;box-shadow:var(--shadow)}
+    .about-copy h2{font-size:clamp(36px,4vw,50px);line-height:1.08;letter-spacing:-.035em;margin:12px 0 20px;color:var(--blue)}
+    .about-copy p{font-size:18px;color:#58616a}
+    .checklist{margin-top:28px;display:grid;gap:14px}
+    .check{display:flex;gap:12px;align-items:flex-start}
+    .check b{color:var(--blue)}
+    .check span:first-child{width:28px;height:28px;flex:0 0 28px;border-radius:50%;background:#e8eef5;color:var(--blue);display:grid;place-items:center;font-weight:900}
+    .process{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .step{background:#fff;border-radius:24px;padding:30px;border:1px solid var(--line);border-top:4px solid #8eb5dd;box-shadow:0 10px 30px rgba(29,79,145,.05)}
+    .step span{font-size:13px;font-weight:800;color:var(--blue);letter-spacing:.08em}
+    .step h3{margin:12px 0 8px;font-size:23px;color:var(--blue)}
+    .online{padding:0 0 88px}
+    .online-box{display:grid;grid-template-columns:1fr 1fr;overflow:hidden;border-radius:32px;background:var(--blue);color:#fff}
+    .online-copy{padding:56px}
+    .online-copy h2{font-size:clamp(36px,4vw,50px);line-height:1.08;letter-spacing:-.035em;margin:0 0 18px}
+    .online-copy p{font-size:18px;color:#dbe5ef}
+    .online-box img{height:100%;min-height:500px;object-fit:cover;object-position:center 35%}
+
+    .visual-strip{padding:72px 0;background:#fff}
+    .visual-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:54px;align-items:center}
+    .visual-copy h2{font-size:clamp(36px,4vw,50px);line-height:1.08;letter-spacing:-.035em;margin:12px 0 18px;color:var(--blue)}
+    .visual-copy p{font-size:18px;color:var(--muted);max-width:650px}
+    .visual-grid img{width:100%;height:520px;object-fit:cover;object-position:center 28%;border-radius:30px;box-shadow:var(--shadow)}
+    .faq{max-width:860px}
+    details{border-bottom:1px solid var(--line);padding:18px 0}
+    summary{cursor:pointer;font-weight:700;font-size:18px;list-style:none;display:flex;justify-content:space-between;gap:16px}
+    summary::-webkit-details-marker{display:none}
+    summary:after{content:"+";font-size:24px;color:var(--blue)}
+    details[open] summary:after{content:"–"}
+    details p{color:var(--muted);margin:12px 0 2px}
+    .contact{background:#163b6b;color:#fff}
+    .contact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}
+    .contact h2{font-size:clamp(36px,4vw,50px);line-height:1.08;letter-spacing:-.035em;margin:0 0 18px}
+    .contact p{font-size:18px;color:#d6e0e9}
+    .contact-card{background:#fff;color:var(--ink);padding:30px;border-radius:24px}
+    .contact-row{padding:12px 0;border-bottom:1px solid var(--line)}
+    .contact-row:last-child{border-bottom:0}
+    .contact-row small{display:block;color:var(--muted);margin-bottom:3px}
+    footer{padding:28px 0;color:#707980;font-size:14px;background:#fff}
+    .footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    @media (max-width:900px){
+      .nav-links{display:none}
+      .hero-grid,.about-grid,.online-box,.contact-grid,.visual-grid{grid-template-columns:1fr}
+      .portrait-card{max-width:620px}
+      .portrait-card img{height:520px}
+      .portrait-tag{left:16px}
+      .cards,.process{grid-template-columns:1fr}
+      .online-copy{padding:38px 28px}
+      .online-box img{min-height:360px}
+    }
+    @media (max-width:600px){
+      .wrap{width:min(100% - 28px, 1160px)}
+      .nav{height:78px}
+      .brand-logo{height:62px;max-width:300px}
+      .hero{padding-top:44px}
+      section{padding:66px 0}
+      .hero p,.section-head p,.about-copy p,.online-copy p,.contact p{font-size:17px}
+      .portrait-card img{height:440px;border-radius:24px}
+      .about-grid img{height:460px}
+      .visual-grid img{height:420px}
+      .hero-actions{flex-direction:column;align-items:stretch}
+      .btn{width:100%}
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"ProfessionalService",
+    "name":"Elena Serrano Aguirrezábal · Psicóloga online especializada en adolescencia y familias",
+    "description":"Psicóloga online especializada en adolescencia y familias. Terapia online para adolescentes, jóvenes, madres, padres y familias.",
+    "telephone":"+34651406076",
+    "areaServed":"España",
+    "sameAs":["https://www.instagram.com/elenaserrano.psico/"]
+  }
+  </script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap nav">
+      <a class="brand" href="#inicio" aria-label="Inicio">
+        <img class="brand-logo" src="assets/logo-header-360.png" alt="Elena Serrano" />
+      </a>
+      <nav class="nav-links" aria-label="Navegación principal">
+        <a href="#servicios">Servicios</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#como-trabajo">Cómo trabajo</a>
+        <a href="#faq">Preguntas frecuentes</a>
+      </nav>
+      <a class="nav-cta" href="https://wa.me/34651406076?text=Hola%20Elena%2C%20he%20visto%20tu%20web%20y%20me%20gustar%C3%ADa%20contarte%20nuestra%20situaci%C3%B3n%20para%20saber%20si%20puedes%20ayudarnos.%20Me%20llamo..." target="_blank" rel="noopener">Contactar</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="wrap hero-grid">
+        <div>
+          <span class="eyebrow">Psicología online especializada en adolescencia y familias</span>
+          <h1>Cuando la convivencia se complica, no tenéis por qué resolverlo solos</h1>
+          <p>Acompaño online a adolescentes, jóvenes y familias a entender qué está pasando, recuperar la comunicación y encontrar herramientas concretas para generar cambios reales y sostenibles.</p>
+          <div class="hero-actions">
+            <a class="btn btn-whatsapp" href="https://wa.me/34651406076?text=Hola%20Elena%2C%20he%20visto%20tu%20web%20y%20me%20gustar%C3%ADa%20contarte%20nuestra%20situaci%C3%B3n%20para%20saber%20si%20puedes%20ayudarnos.%20Me%20llamo..." target="_blank" rel="noopener">Cuéntame vuestro caso</a>
+            <a class="btn btn-nav" href="#como-trabajo">Cómo trabajo</a>
+          </div>
+          <div class="hero-note">Terapia online · Adolescentes, jóvenes y familias · Atención en toda España</div>
+        </div>
+        <div class="portrait-card">
+          <img src="assets/elena-hero.png" alt="Elena Serrano Aguirrezábal, psicóloga especializada en adolescencia" />
+          <div class="portrait-tag"><strong>+10 años de experiencia</strong><span>Trabajo especializado con adolescentes y familias.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicios">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">En qué puedo ayudarte</span>
+          <h2>Un espacio para entender lo que está pasando y saber cómo actuar</h2>
+          <p>No trabajo con recetas generales. El proceso online se adapta a la situación de cada adolescente, joven y familia.</p>
+        </div>
+        <div class="cards">
+          <article class="card"><span class="num">01</span><h3>Adolescentes y jóvenes</h3><p>Dificultades emocionales, ansiedad, regulación emocional, autoestima, relaciones, bloqueo, aislamiento o momentos de cambio.</p></article>
+          <article class="card"><span class="num">02</span><h3>Problemas de conducta y convivencia</h3><p>Discusiones frecuentes, desafío, límites, escaladas de conflicto, impulsividad o sensación de que la convivencia se está yendo de las manos.</p></article>
+          <article class="card"><span class="num">03</span><h3>Madres, padres y familias</h3><p>Orientación para recuperar seguridad, mejorar la comunicación y aprender a intervenir sin entrar continuamente en luchas de poder.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="soft" id="sobre-mi">
+      <div class="wrap about-grid">
+        <img src="assets/elena-about.png" alt="Elena Serrano, psicóloga" />
+        <div class="about-copy">
+          <span class="eyebrow">Sobre mí</span>
+          <h2>Psicóloga y criminóloga, especializada en adolescencia y dinámicas familiares complejas</h2>
+          <p>Llevo más de diez años trabajando con adolescentes, jóvenes y familias en contextos de alta complejidad. En consulta online, combino una mirada psicológica rigurosa con herramientas muy concretas para el día a día.</p>
+          <p>Busco que entiendas qué está sosteniendo el problema, qué podéis cambiar y cómo hacerlo de una forma asumible para vuestra familia.</p>
+          <div class="checklist">
+            <div class="check"><span>✓</span><div><b>Especialización real en adolescencia.</b><br/>Experiencia continuada con problemas de conducta, regulación emocional y relaciones familiares complejas.</div></div>
+            <div class="check"><span>✓</span><div><b>Trabajo con las familias.</b><br/>En adolescencia, el trabajo familiar es una parte muy importante del proceso. La implicación de madres y padres puede ser clave para consolidar cambios, modificar dinámicas en casa y, en muchos casos, determinar el éxito terapéutico.</div></div>
+            <div class="check"><span>✓</span><div><b>Enfoque práctico.</b><br/>Objetivos claros, herramientas aplicables y revisión periódica de lo que está funcionando.</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="como-trabajo">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Cómo funciona el proceso</span>
+          <h2>Empezamos entendiendo bien el caso y construimos el trabajo a partir de ahí</h2>
+        </div>
+        <div class="process">
+          <div class="step"><span>PASO 1</span><h3>Primera videollamada</h3><p>Una conversación online breve para conocernos, entender qué os preocupa y valorar si puedo ayudaros.</p></div>
+          <div class="step"><span>PASO 2</span><h3>Sesión de evaluación online</h3><p>Recogemos la información relevante y definimos objetivos de trabajo adaptados a vuestra situación.</p></div>
+          <div class="step"><span>PASO 3</span><h3>Intervención y seguimiento</h3><p>Trabajamos con el adolescente, con la familia o con ambos, revisando avances y ajustando herramientas cuando sea necesario.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="online">
+      <div class="wrap online-box">
+        <div class="online-copy">
+          <h2>Terapia online pensada para encajar en vuestro día a día</h2>
+          <p>Trabajo online con adolescentes, jóvenes y familias de toda España.</p>
+          <p>Este formato facilita iniciar y mantener el proceso con mayor flexibilidad, sin desplazamientos y desde un entorno conocido.</p>
+          <p>Solo necesitas un espacio tranquilo, conexión estable y un dispositivo con cámara.</p>
+          <a class="btn btn-light" href="https://wa.me/34651406076?text=Hola%20Elena%2C%20estoy%20valorando%20empezar%20terapia%20online%20y%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20tu%20acompa%C3%B1amiento.%20Me%20llamo..." target="_blank" rel="noopener">Quiero más info</a>
+        </div>
+        <img src="assets/elena-online.png" alt="Elena Serrano trabajando en terapia online" />
+      </div>
+    </section>
+
+
+    <section class="visual-strip" aria-label="Consulta online">
+      <div class="wrap visual-grid">
+        <div class="visual-copy">
+          <span class="eyebrow">Un acompañamiento cercano, también a distancia</span>
+          <h2>La terapia online puede sentirse personal, práctica y muy humana</h2>
+          <p>El formato online permite desarrollar un proceso terapéutico profundo y continuado cuando se adapta bien a la persona y a sus necesidades. En adolescentes y jóvenes, además, trabajar desde un entorno conocido puede favorecer que se sientan más cómodos y que la terapia se integre con mayor facilidad en su rutina.</p>
+          <p>No se trata de trasladar una sesión presencial a una pantalla sin más. Adapto las sesiones para mantener un trabajo dinámico y participativo: utilizamos materiales visuales, ejercicios, registros, recursos compartidos y tareas entre sesiones cuando pueden ayudar. El objetivo es que lo trabajado no se quede en la videollamada, sino que se traduzca en cambios concretos en el día a día.</p>
+          <p>Incorporo también el trabajo con madres y padres. En la adolescencia, la familia forma parte del contexto en el que se producen y mantienen muchas de las dificultades, por lo que su participación puede ser fundamental para favorecer cambios estables y generalizar y sostener los avances fuera de sesión.</p>
+        </div>
+        <img src="assets/elena-closeup.png" alt="Elena Serrano en un entorno cercano y profesional" />
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="wrap faq">
+        <div class="section-head">
+          <span class="eyebrow">Preguntas frecuentes</span>
+          <h2>Antes de empezar, es normal tener dudas</h2>
+        </div>
+        <details><summary>¿Puedo empezar yo como madre o padre aunque mi hijo no quiera ayuda?</summary><p>Sí. De hecho, en adolescencia muchas veces es muy útil comenzar trabajando con los adultos aunque el adolescente todavía no quiera participar. Cambiar la forma de comunicaros, revisar cómo se están poniendo los límites, reducir las escaladas de conflicto o entender mejor qué está manteniendo determinadas conductas puede producir cambios importantes en casa. <br/><br/>Este primer trabajo con la familia también puede ayudar a crear un contexto más favorable para que el adolescente se sienta menos señalado y más dispuesto a implicarse. Además, cuando percibe que la terapia no consiste únicamente en «cambiarle a él», sino en ayudar a toda la familia a relacionarse de otra manera, suele ser más fácil plantear su incorporación al proceso si posteriormente resulta conveniente.</p></details>
+        <details><summary>¿La terapia online funciona con adolescentes?</summary><p>Sí, puede ser un formato muy adecuado para adolescentes y jóvenes. La eficacia del proceso no depende únicamente de estar físicamente en la misma habitación, sino de factores como la alianza terapéutica, la implicación, la continuidad y que la intervención esté bien adaptada a la persona. En consulta online utilizo recursos visuales, ejercicios, materiales compartidos y herramientas prácticas para favorecer una participación activa. <br/><br/>Para que el trabajo sea cómodo y realmente útil, también es importante cuidar algunas condiciones básicas del entorno. Valoro que exista suficiente privacidad y unas condiciones mínimas para poder trabajar con tranquilidad. En la primera toma de contacto revisamos vuestro caso y vemos si este formato encaja bien.</p></details>
+        <details><summary>¿Trabajas solo con adolescentes o también puedo recibir ayuda como madre/padre?</summary><p>Mi especialización principal es la adolescencia y la juventud, pero el trabajo con madres, padres y familias ocupa una parte muy importante de mi práctica profesional. Muchas dificultades adolescentes no pueden entenderse de forma aislada del contexto familiar: la comunicación, los límites, las respuestas ante el conflicto o la manera en que cada miembro reacciona pueden influir mucho en la evolución. <br/><br/>Por eso, según los objetivos del proceso, puedo trabajar con el adolescente, contigo como madre o padre, o combinar ambos espacios, ya que la implicación familiar es, en muchos casos, un elemento decisivo para que los cambios se mantengan.</p></details>
+        <details><summary>¿Cómo sé si nuestra situación en casa necesita ayuda profesional?</summary><p>No es necesario esperar a que el problema sea extremo. Suele ser buen momento para pedir una valoración cuando los conflictos se repiten y cada vez cuesta más resolverlos, cuando la comunicación se ha deteriorado, aparecen cambios emocionales o conductuales que preocupan, o cuando como madre o padre sientes que has probado muchas cosas y ya no sabes cómo actuar. <br/><br/>Pedir ayuda no implica necesariamente iniciar un proceso largo: a veces una primera valoración ya permite poner orden y orientar mejor los siguientes pasos. La primera valoración sirve precisamente para entender qué está ocurriendo, qué factores pueden estar influyendo y decidir si es necesario iniciar un proceso terapéutico o si bastan unas pautas más concretas.</p></details>
+      </div>
+    </section>
+
+    <section class="contact" id="contacto">
+      <div class="wrap contact-grid">
+        <div>
+          <h2>Si quieres contarme vuestro caso, podemos empezar por una primera conversación</h2>
+          <p>Escríbeme por WhatsApp y cuéntame brevemente qué os preocupa. Te responderé para valorar juntos cuál puede ser el siguiente paso.</p>
+          <div class="hero-actions">
+            <a class="btn btn-light" href="https://wa.me/34651406076?text=Hola%20Elena%2C%20he%20visto%20tu%20web%20y%20me%20gustar%C3%ADa%20contarte%20nuestra%20situaci%C3%B3n%20para%20saber%20si%20puedes%20ayudarnos.%20Me%20llamo..." target="_blank" rel="noopener">Cuéntame vuestro caso por WhatsApp</a>
+            <a class="btn btn-instagram" href="https://www.instagram.com/elenaserrano.psico/" target="_blank" rel="noopener">Ver mi Instagram</a>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-row"><small>WhatsApp / Teléfono</small><strong>651 40 60 76</strong></div>
+          <div class="contact-row"><small>Correo electrónico</small><strong><a href="mailto:elenaserrano.psico@gmail.com">elenaserrano.psico@gmail.com</a></strong></div>
+          <div class="contact-row"><small>Modalidad</small><strong>Online · Atención en toda España</strong></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-row">
+      <span>© 2026 Elena Serrano Aguirrezábal</span>
+      <span>Psicología online para adolescentes, jóvenes y familias</span>
+    </div>
+  </footer>
+</body>
+</html>
