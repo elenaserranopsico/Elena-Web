@@ -714,9 +714,19 @@
 
       <p>Solo necesitas un espacio tranquilo, conexión estable y un dispositivo con cámara.</p>
 
-      <button class="btn btn-light online-form-toggle" type="button">
-        Pregúntame sobre la terapia online
-      </button>
+     <button
+  class="btn btn-light online-form-toggle"
+  type="button"
+  onclick="
+    const formulario = document.querySelector('.online-form-wrapper');
+    formulario.classList.toggle('open');
+    this.textContent = formulario.classList.contains('open')
+      ? 'Cerrar formulario'
+      : 'Pregúntame sobre la terapia online';
+  "
+>
+  Pregúntame sobre la terapia online
+</button>
 
       <div class="online-form-wrapper">
         <form class="online-form">
@@ -825,23 +835,5 @@
       <span>Psicología online para adolescentes, jóvenes y familias</span>
     </div>
   </footer>
-
-<script>
-  const formToggle = document.querySelector('.online-form-toggle');
-  const formWrapper = document.querySelector('.online-form-wrapper');
-
-  if (formToggle && formWrapper) {
-    formToggle.addEventListener('click', function () {
-      formWrapper.classList.toggle('open');
-
-      if (formWrapper.classList.contains('open')) {
-        formToggle.textContent = 'Cerrar formulario';
-      } else {
-        formToggle.textContent = 'Pregúntame sobre la terapia online';
-      }
-    });
-  }
-</script>
-  
 </body>
 </html>
