@@ -628,18 +628,76 @@
   </div>
 </section>
     
-    <section class="online">
-      <div class="wrap online-box">
-        <div class="online-copy">
-          <h2>Terapia online pensada para encajar en vuestro día a día</h2>
-          <p>Trabajo online con adolescentes, jóvenes y familias de toda España.</p>
-          <p>Este formato facilita iniciar y mantener el proceso con mayor flexibilidad, sin desplazamientos y desde un entorno conocido.</p>
-          <p>Solo necesitas un espacio tranquilo, conexión estable y un dispositivo con cámara.</p>
-          <a class="btn btn-light" href="https://wa.me/34651406076?text=Hola%20Elena%2C%20estoy%20valorando%20empezar%20terapia%20online%20y%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20tu%20acompa%C3%B1amiento.%20Me%20llamo..." target="_blank" rel="noopener">Quiero más info</a>
-        </div>
-        <img src="assets/elena-online.png" alt="Elena Serrano trabajando en terapia online" />
+   <section class="online">
+  <div class="wrap online-box">
+    
+    <div class="online-copy">
+      <h2>Terapia online pensada para encajar en vuestro día a día</h2>
+
+      <p>Trabajo online con adolescentes, jóvenes y familias de toda España.</p>
+
+      <p>Este formato facilita iniciar y mantener el proceso con mayor flexibilidad, sin desplazamientos y desde un entorno conocido.</p>
+
+      <p>Solo necesitas un espacio tranquilo, conexión estable y un dispositivo con cámara.</p>
+
+      <button class="btn btn-light online-form-toggle" type="button">
+        Pregúntame sobre la terapia online
+      </button>
+
+      <div class="online-form-wrapper">
+        <form class="online-form">
+          
+          <div class="form-group">
+            <label for="consulta-nombre">Nombre</label>
+            <input
+              type="text"
+              id="consulta-nombre"
+              name="nombre"
+              required
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="consulta-email">Email</label>
+            <input
+              type="email"
+              id="consulta-email"
+              name="email"
+              required
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="consulta-mensaje">
+              ¿Sobre qué aspecto del trabajo terapéutico tienes dudas?
+            </label>
+            <textarea
+              id="consulta-mensaje"
+              name="mensaje"
+              rows="5"
+              required
+            ></textarea>
+          </div>
+
+          <button class="btn btn-light" type="submit">
+            Enviar consulta
+          </button>
+
+          <p class="form-help">
+            Te responderé personalmente por e-mail en las próximas 24–48 h.
+          </p>
+
+        </form>
       </div>
-    </section>
+    </div>
+
+    <img
+      src="assets/elena-online.png"
+      alt="Elena Serrano trabajando en terapia online"
+    />
+
+  </div>
+</section>
 
 
     <section class="visual-strip" aria-label="Consulta online">
