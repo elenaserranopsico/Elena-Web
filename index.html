@@ -257,7 +257,26 @@
     font-size: 1.08rem;
   }
 }
-    
+
+.motivo-icon svg {
+  width: 31px;
+  height: 31px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.motivo-icon svg.svg-fill {
+  fill: currentColor;
+  stroke: none;
+}
+
+.motivo-card:first-child .motivo-icon svg {
+  fill: currentColor;
+  stroke: none;
+}   
   </style>
   <script type="application/ld+json">
   {
@@ -309,6 +328,7 @@
 
 <section id="servicios" class="motivos-consulta">
   <div class="wrap">
+
     <div class="section-head">
       <span class="eyebrow">Principales motivos de consulta</span>
       <h2>Dificultades con las que trabajo</h2>
@@ -317,38 +337,90 @@
 
     <div class="motivos-grid">
 
+      <!-- 1. Regulación emocional -->
       <article class="motivo-card">
-        <div class="motivo-icon" aria-hidden="true">💥</div>
+        <div class="motivo-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 2.5l1.6 5 4.4-2.8-2 4.9 5.2.4-4.5 2.8 3.7 3.6-5.1-.8.8 5.2-3.4-4-3.4 4 .8-5.2-5.1.8 3.7-3.6-4.5-2.8 5.2-.4-2-4.9 4.4 2.8L12 2.5z"/>
+          </svg>
+        </div>
+
         <h3>Regulación emocional e impulsividad</h3>
         <p>Enfado, frustración, reacciones desproporcionadas, culpa tras discutir o dificultad para manejar emociones intensas.</p>
       </article>
 
+      <!-- 2. Desbordamiento emocional -->
       <article class="motivo-card">
-        <div class="motivo-icon" aria-hidden="true">🌀</div>
+        <div class="motivo-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 5
+                     C7 5 5 8 5 11
+                     C5 15 8 18 12 18
+                     C16 18 19 15.5 19 12
+                     C19 8.5 16.5 7 14 7
+                     C11 7 9 9 9 11.5
+                     C9 14 11 15.5 13 15.5
+                     C15 15.5 16.5 14 16.5 12.5
+                     C16.5 11 15.5 10 14 10
+                     C12.5 10 12 11 12 12"/>
+          </svg>
+        </div>
+
         <h3>Ansiedad y desbordamiento emocional</h3>
         <p>Ansiedad, bloqueo, sensación de saturación, dificultad para calmarse o momentos en los que todo se hace cuesta arriba.</p>
       </article>
 
+      <!-- 3. Autoestima -->
       <article class="motivo-card">
-        <div class="motivo-icon" aria-hidden="true">♥</div>
+        <div class="motivo-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" class="svg-fill">
+            <path d="M12 20.5S4 15.5 4 9.5C4 6.5 6 4.5 8.7 4.5c1.6 0 2.8.8 3.3 1.8.5-1 1.7-1.8 3.3-1.8C18 4.5 20 6.5 20 9.5c0 6-8 11-8 11z"/>
+          </svg>
+        </div>
+
         <h3>Autoestima e inseguridad</h3>
         <p>Autocrítica, comparaciones constantes, necesidad de aprobación o dificultad para valorarse con más seguridad.</p>
       </article>
 
+      <!-- 4. Relaciones sociales -->
       <article class="motivo-card">
-        <div class="motivo-icon" aria-hidden="true">👥</div>
+        <div class="motivo-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <circle cx="9" cy="8" r="3"/>
+            <circle cx="16" cy="9" r="2.5"/>
+            <path d="M3.5 19c.4-3.5 2.4-5.5 5.5-5.5s5.1 2 5.5 5.5"/>
+            <path d="M14 14c3.5-.5 5.8 1.2 6.5 4.5"/>
+          </svg>
+        </div>
+
         <h3>Relaciones sociales y dificultad para encajar</h3>
         <p>Miedo al rechazo, conflictos con amistades, dificultad para poner límites, dependencia emocional o sensación de no terminar de encajar.</p>
       </article>
 
+      <!-- 5. Autoexigencia -->
       <article class="motivo-card">
-        <div class="motivo-icon" aria-hidden="true">✎</div>
+        <div class="motivo-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M5 19l3.5-.8L19 7.7 16.3 5 5.8 15.5 5 19z"/>
+            <path d="M14.8 6.5l2.7 2.7"/>
+            <path d="M5 19h4"/>
+          </svg>
+        </div>
+
         <h3>Autoexigencia y presión académica</h3>
         <p>Autoexigencia, ansiedad académica, miedo a decepcionar, bloqueo ante responsabilidades o dificultades de organización.</p>
       </article>
 
+      <!-- 6. Convivencia familiar -->
       <article class="motivo-card">
-        <div class="motivo-icon" aria-hidden="true">🏠</div>
+        <div class="motivo-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M3.5 11.5L12 4l8.5 7.5"/>
+            <path d="M5.5 10.5V20h13v-9.5"/>
+            <path d="M9.5 20v-6h5v6"/>
+          </svg>
+        </div>
+
         <h3>Conflictos familiares y convivencia</h3>
         <p>Discusiones frecuentes, límites, luchas de poder o sensación de que la convivencia en casa se ha vuelto difícil de manejar.</p>
       </article>
@@ -356,7 +428,6 @@
     </div>
   </div>
 </section>
-
     <section class="soft" id="sobre-mi">
       <div class="wrap about-grid">
         <img src="assets/elena-about.png" alt="Elena Serrano, psicóloga" />
