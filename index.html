@@ -825,5 +825,23 @@
       <span>Psicología online para adolescentes, jóvenes y familias</span>
     </div>
   </footer>
+
+<script>
+  const formToggle = document.querySelector('.online-form-toggle');
+  const formWrapper = document.querySelector('.online-form-wrapper');
+
+  if (formToggle && formWrapper) {
+    formToggle.addEventListener('click', function () {
+      formWrapper.classList.toggle('open');
+
+      if (formWrapper.classList.contains('open')) {
+        formToggle.textContent = 'Cerrar formulario';
+      } else {
+        formToggle.textContent = 'Pregúntame sobre la terapia online';
+      }
+    });
+  }
+</script>
+  
 </body>
 </html>
