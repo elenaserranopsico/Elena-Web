@@ -134,6 +134,130 @@
       .hero-actions{flex-direction:column;align-items:stretch}
       .btn{width:100%}
     }
+
+    /* ===== DIFICULTADES QUE TRABAJO ===== */
+
+.motivos-consulta {
+  padding: 90px 0;
+  background: linear-gradient(180deg, #ffffff 0%, #f7fbff 100%);
+}
+
+.motivos-consulta .section-head {
+  max-width: 900px;
+  margin-bottom: 42px;
+}
+
+.motivos-consulta .section-head .eyebrow {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #4f8fca;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.motivos-consulta .section-head h2 {
+  margin: 0 0 10px;
+  color: #173f76;
+  font-size: clamp(2.2rem, 4vw, 4rem);
+  line-height: 1.05;
+}
+
+.motivos-consulta .section-head p {
+  margin: 0;
+  color: #5f6c7b;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.motivos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.motivo-card {
+  padding: 30px;
+  background: #ffffff;
+  border: 1px solid #dbe9f6;
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(31, 82, 136, 0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.motivo-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 34px rgba(31, 82, 136, 0.10);
+}
+
+.motivo-icon {
+  width: 66px;
+  height: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 22px;
+  border-radius: 50%;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #174a82;
+  background: #eaf4fd;
+}
+
+.motivo-card:nth-child(2) .motivo-icon,
+.motivo-card:nth-child(4) .motivo-icon,
+.motivo-card:nth-child(6) .motivo-icon {
+  background: #4f8fca;
+  color: #ffffff;
+}
+
+.motivo-card:nth-child(3) .motivo-icon,
+.motivo-card:nth-child(5) .motivo-icon {
+  background: #d8ebfb;
+  color: #174a82;
+}
+
+.motivo-card h3 {
+  margin: 0 0 14px;
+  color: #173f76;
+  font-size: 1.45rem;
+  line-height: 1.2;
+}
+
+.motivo-card p {
+  margin: 0;
+  color: #5e6977;
+  font-size: 1.02rem;
+  line-height: 1.65;
+}
+
+/* Tablet */
+@media (max-width: 1000px) {
+  .motivos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Móvil */
+@media (max-width: 680px) {
+  .motivos-consulta {
+    padding: 64px 0;
+  }
+
+  .motivos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .motivo-card {
+    padding: 24px;
+  }
+
+  .motivos-consulta .section-head p {
+    font-size: 1.08rem;
+  }
+}
+    
   </style>
   <script type="application/ld+json">
   {
