@@ -693,6 +693,135 @@ details p {
     text-align: left;
   }
 }
+
+/* ===== HERO REORGANIZADO ===== */
+
+.hero-reworked {
+  padding: 88px 0 72px;
+}
+
+.hero-heading {
+  max-width: 1180px;
+  margin-bottom: 42px;
+  text-align: left;
+}
+
+.hero-heading h1 {
+  margin: 12px 0 0;
+  color: #173f76;
+  font-size: clamp(3rem, 5.4vw, 5.8rem);
+  line-height: 0.98;
+  letter-spacing: -0.045em;
+  max-width: 1180px;
+}
+
+.hero-main {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 54px;
+  align-items: start;
+}
+
+.hero-copy p {
+  margin: 0 0 20px;
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.72;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.hero-copy .hero-actions {
+  margin-top: 28px;
+}
+
+.hero-copy .hero-note {
+  margin-top: 22px;
+}
+
+.hero-main .portrait-card {
+  position: relative;
+}
+
+.hero-main .portrait-card img {
+  width: 100%;
+  display: block;
+  border-radius: 28px;
+  object-fit: cover;
+}
+
+.hero-main .portrait-tag {
+  position: absolute;
+  left: -22px;
+  bottom: 28px;
+  width: 290px;
+  padding: 20px 22px;
+  background: #ffffff;
+  border-left: 4px solid #173f76;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(31, 82, 136, 0.12);
+}
+
+.hero-main .portrait-tag strong {
+  display: block;
+  margin-bottom: 6px;
+  color: #173f76;
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+.hero-main .portrait-tag span {
+  display: block;
+  color: #5e6977;
+  font-size: 0.93rem;
+  line-height: 1.45;
+}
+
+/* Tablet */
+@media (max-width: 980px) {
+  .hero-main {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-main .portrait-card {
+    max-width: 680px;
+  }
+
+  .hero-main .portrait-tag {
+    left: 20px;
+  }
+}
+
+/* Móvil */
+@media (max-width: 680px) {
+  .hero-reworked {
+    padding: 64px 0 52px;
+  }
+
+  .hero-heading {
+    margin-bottom: 30px;
+  }
+
+  .hero-heading h1 {
+    font-size: 2.5rem;
+    line-height: 1.02;
+  }
+
+  .hero-main {
+    gap: 30px;
+  }
+
+  .hero-copy p {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .hero-main .portrait-tag {
+    position: static;
+    width: auto;
+    margin-top: 14px;
+  }
+}
     
   </style>
   <script type="application/ld+json">
