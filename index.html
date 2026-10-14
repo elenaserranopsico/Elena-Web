@@ -926,10 +926,17 @@
           }
         });
 
-        if (response.ok) {
-          onlineForm.reset();
-          onlineForm.style.display = 'none';
-          successMessage.hidden = false;
+       if (response.ok) {
+  onlineForm.reset();
+  onlineForm.style.display = 'none';
+  successMessage.hidden = false;
+
+  const formToggle = document.querySelector('.online-form-toggle');
+
+  if (formToggle) {
+    formToggle.style.display = 'none';
+  }
+}
         } else {
           submitButton.disabled = false;
           submitButton.textContent = originalButtonText;
