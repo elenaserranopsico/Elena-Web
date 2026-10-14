@@ -462,6 +462,13 @@
 .no-break {
   white-space: nowrap;
 }
+
+.form-privacy-note {
+  margin: -4px 0 18px;
+  color: #667384;
+  font-size: 0.78rem;
+  line-height: 1.45;
+}
     
   </style>
   <script type="application/ld+json">
@@ -734,7 +741,12 @@
 </button>
 
       <div class="online-form-wrapper">
-        <form class="online-form">
+     
+        <form
+  class="online-form"
+  action="https://formspree.io/f/xkjoqevl"
+  method="POST"
+>
           
           <div class="form-group">
             <label for="consulta-nombre">Nombre</label>
@@ -756,6 +768,12 @@
             >
           </div>
 
+          <input
+  type="hidden"
+  name="_subject"
+  value="Nueva consulta desde elenaserranopsico.es"
+>
+
           <div class="form-group">
             <label for="consulta-mensaje">
               ¿Sobre qué aspecto del trabajo terapéutico tienes dudas?
@@ -767,6 +785,10 @@
               required
             ></textarea>
           </div>
+
+          <p class="form-privacy-note">
+  Para proteger tu privacidad, evita incluir información clínica especialmente sensible en este formulario.
+</p>
 
           <button class="btn btn-light" type="submit">
             Enviar consulta
