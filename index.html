@@ -925,6 +925,94 @@ section {
     padding-bottom: 60px;
   }
 }
+
+    /* ===== CORRECCIÓN FINAL DE ALINEACIÓN Y TÍTULOS ===== */
+
+
+/* ---------- FAQ: recuperar ancho y alineación ---------- */
+
+#faq .wrap.faq {
+  width: min(1180px, calc(100% - 48px));
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#faq .section-head {
+  max-width: 1100px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 34px;
+}
+
+#faq details {
+  width: 100%;
+}
+
+#faq summary {
+  width: 100%;
+}
+
+
+/* ---------- Títulos secundarios coherentes ---------- */
+
+.about-heading h2,
+.proceso-section .section-head h2,
+#faq .section-head h2,
+.motivos-consulta .section-head h2 {
+  font-size: clamp(2.7rem, 3.8vw, 4rem);
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+}
+
+
+/* ---------- SOBRE MÍ: más equilibrado ---------- */
+
+.about-heading {
+  max-width: 1250px;
+  margin-bottom: 42px;
+}
+
+.about-heading h2 {
+  max-width: 1250px;
+}
+
+
+/* ---------- Menos aire entre bloques ---------- */
+
+.about-section,
+.proceso-section,
+.motivos-consulta,
+#faq {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+
+/* ---------- Móvil ---------- */
+
+@media (max-width: 680px) {
+
+  #faq .wrap.faq {
+    width: calc(100% - 32px);
+  }
+
+  .about-heading h2,
+  .proceso-section .section-head h2,
+  #faq .section-head h2,
+  .motivos-consulta .section-head h2 {
+    font-size: 2.15rem;
+    line-height: 1.08;
+  }
+
+  .about-section,
+  .proceso-section,
+  .motivos-consulta,
+  #faq {
+    padding-top: 52px;
+    padding-bottom: 52px;
+  }
+}
     
   </style>
   <script type="application/ld+json">
