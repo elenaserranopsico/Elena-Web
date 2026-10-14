@@ -661,6 +661,38 @@
     padding: 20px;
   }
 }
+
+/* ===== TEXTO JUSTIFICADO EN PÁRRAFOS LARGOS ===== */
+
+.hero p,
+.motivo-card p,
+.proceso-contenido p,
+.about-text p,
+.about-point p,
+.online-copy p,
+.online-form p,
+.visual-copy p,
+.contact p,
+details p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* En móvil, mejor alineado a la izquierda para evitar huecos grandes */
+@media (max-width: 680px) {
+  .hero p,
+  .motivo-card p,
+  .proceso-contenido p,
+  .about-text p,
+  .about-point p,
+  .online-copy p,
+  .online-form p,
+  .visual-copy p,
+  .contact p,
+  details p {
+    text-align: left;
+  }
+}
     
   </style>
   <script type="application/ld+json">
