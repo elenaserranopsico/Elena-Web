@@ -903,7 +903,7 @@
     </div>
   </footer>
 
-  <script>
+<script>
   const onlineForm = document.querySelector('.online-form');
   const successMessage = document.querySelector('.form-success');
 
@@ -926,22 +926,23 @@
           }
         });
 
-       if (response.ok) {
-  onlineForm.reset();
-  onlineForm.style.display = 'none';
-  successMessage.hidden = false;
+        if (response.ok) {
+          onlineForm.reset();
+          onlineForm.style.display = 'none';
+          successMessage.hidden = false;
 
-  const formToggle = document.querySelector('.online-form-toggle');
+          const formToggle = document.querySelector('.online-form-toggle');
 
-  if (formToggle) {
-    formToggle.style.display = 'none';
-  }
-}
+          if (formToggle) {
+            formToggle.style.display = 'none';
+          }
+
         } else {
           submitButton.disabled = false;
           submitButton.textContent = originalButtonText;
           alert('No se ha podido enviar la consulta. Inténtalo de nuevo en unos minutos.');
         }
+
       } catch (error) {
         submitButton.disabled = false;
         submitButton.textContent = originalButtonText;
