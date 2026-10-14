@@ -470,6 +470,33 @@
   line-height: 1.45;
   font-weight: 400;
 }
+
+.form-success {
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 34px 30px;
+  box-shadow: 0 12px 30px rgba(31, 82, 136, 0.12);
+}
+
+.form-success h3 {
+  margin: 0 0 16px;
+  color: #173f76;
+  font-size: 1.45rem;
+  line-height: 1.3;
+}
+
+.form-success p {
+  margin: 0 0 14px;
+  color: #667384 !important;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.form-success .form-success-final {
+  margin-bottom: 0;
+  color: #173f76 !important;
+  font-weight: 700;
+}
     
   </style>
   <script type="application/ld+json">
@@ -800,6 +827,18 @@
           </p>
 
         </form>
+        <div class="form-success" hidden>
+  <h3>Gracias, he recibido tu consulta</h3>
+
+  <p>
+    Te responderé personalmente por e-mail en las próximas
+    <span class="no-break">24–48 h.</span>
+  </p>
+
+  <p class="form-success-final">
+    Cuidar de ti y de tu familia también pasa por atender vuestra salud mental.
+  </p>
+</div>
       </div>
     </div>
 
@@ -863,5 +902,47 @@
       <span>Psicología online para adolescentes, jóvenes y familias</span>
     </div>
   </footer>
+
+  <script>
+  const onlineForm = document.querySelector('.online-form');
+  const successMessage = document.querySelector('.form-success');
+
+  if (onlineForm && successMessage) {
+    onlineForm.addEventListener('submit', async function (event) {
+      event.preventDefault();
+
+      const submitButton = onlineForm.querySelector('button[type="submit"]');
+      const originalButtonText = submitButton.textContent;
+
+      submitButton.disabled = true;
+      submitButton.textContent = 'Enviando...';
+
+      try {
+        const response = await fetch(onlineForm.action, {
+          method: 'POST',
+          body: new FormData(onlineForm),
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+
+        if (response.ok) {
+          onlineForm.reset();
+          onlineForm.style.display = 'none';
+          successMessage.hidden = false;
+        } else {
+          submitButton.disabled = false;
+          submitButton.textContent = originalButtonText;
+          alert('No se ha podido enviar la consulta. Inténtalo de nuevo en unos minutos.');
+        }
+      } catch (error) {
+        submitButton.disabled = false;
+        submitButton.textContent = originalButtonText;
+        alert('No se ha podido enviar la consulta. Comprueba tu conexión e inténtalo de nuevo.');
+      }
+    });
+  }
+</script>
+  
 </body>
 </html>
